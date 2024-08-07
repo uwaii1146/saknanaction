@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body{
+   overflow-x: hidden;
+   width: auto;
+   display: block;
+}
+.a{
+   justify-content: space-around;
+   display: flex;
+   background-color: #e3efff;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+   padding: 100px;
+}
+.c{
+   text-align: center;
+}
+.you{
+   text-align: center;
+   justify-content: space-between;
+   background-color: #e3efff;
+   clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 calc(100% - 50px));
+   padding: 100px;
+}
+.u2{
+   width: calc(100%/2);
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   width: 1000px;
+}
+h1{
+   font-size: auto;
+}
+h3,h4{
+   line-height: 30px
+}
+h4{
+   line-height: 5px;
+}
+p{
+   margin: 10px 100px 0 100px;
+   line-height: 30px;
+   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+iframe{
+   width: 510px;
+   justify-content:space-between;
+   height: 360px;
+   padding: 1px;
+}
+
+@media screen and (max-width:960px){
+   /*960px以上に適用されるCSS（PC用）*/
+}
+   /*600px以下に適用されるCSS（スマホ用）*/
+@media (max-width:600px){
+   body{
+      overflow-x: hidden;
+      width: 480px;
+      display: block;
+   }
+   .a{
+      padding: 50px;
+   }
+   .u2{
+      width: 100%;
+   }
+   h1{
+      background-color: #e3efff;
+      clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 calc(100% - 50px));
+      padding: 30px;
+      outline: 2px red solid;
+      font-size: 30px;
+   }
+   .h3,h4{
+      line-height: 60px;
+   }
+   p{
+      font-size: 80%;
+      margin: 1px 10px 0 10px;
+      width: auto;
+   }
+   img{
+      display: none;
+   }
+   iframe{
+      right: 500px;
+      width: 100%;
+      height: 75%;
+   }
+}
