@@ -52,6 +52,10 @@ iframe{
    height: 360px;
    padding: 1px;
 }
+img{
+   width: 50%;
+   height: auto;
+}
 
 @media screen and (max-width:960px){
    /*960px以上に適用されるCSS（PC用）*/
